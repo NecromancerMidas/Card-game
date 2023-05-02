@@ -46,13 +46,13 @@ namespace Assets.Scripts
             if (Hand.CardsInHand.Count == 0)
             {
                 CancelInvoke("Play");
-                InvokeRepeating("Shop",3,2);
+                InvokeRepeating("Shop",3,1);
             }
         }
        public void BotPlay()
         {
             
-                InvokeRepeating("Play", 3, 2);
+                InvokeRepeating("Play", 3, 1);
             
             
         }
@@ -82,7 +82,6 @@ namespace Assets.Scripts
             Health = 30;
             Deck.Shuffle();
             DrawStartingHand();
-            
         }
 
         // Update is called once per frame

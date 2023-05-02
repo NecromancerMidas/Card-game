@@ -19,28 +19,19 @@ public class MarketDeck : MonoBehaviour
     {
         foreach (var card in CardDb)
         {
-            /*if (card.GetComponent<DisplayCard>().Rarity == "Common")
+            var amount = card.GetComponent<DisplayCard>().Rarity switch
             {
-                break;
-            }*/
-           
-                var amount = 0;
-                switch (card.GetComponent<DisplayCard>().Rarity)
-                {
-                    case "Uncommon": amount = 8;
-                        break;
-                    case "Rare": amount = 5; 
-                        break;
-                    case "Epic": amount = 3;
-                        break;
-                    case "Legendary": amount = 1;
-                        break;
-                }
+                "Uncommon" => 8,
+                "Rare" => 5,
+                "Epic" => 3,
+                "Legendary" => 1,
+                _ => 0
+            };
 
-                for (int i = 0; i < amount; i++)
-                {
+            for (int i = 0; i < amount; i++)
+            {
                     Deck.Add(Instantiate(card,transform));
-                }
+            }
         }
         
     }

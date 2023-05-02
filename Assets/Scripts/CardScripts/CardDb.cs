@@ -22,7 +22,7 @@ namespace Assets.Scripts.CardScripts
                     Resources.Load<Sprite>("soy-soyboy"),"Common"),
                 new Card(5,"Attack",4,"Send to MW2Lobby",3,0,"Force opponent to hear unspeakable things!",
                     Resources.Load<Sprite>("MW2Lobby"),"Uncommon"),
-                new Card(6,"Attack/Economy",4,"Print Money",1,2,"Inflation what could possible go wrong",
+                new Card(6,"Attack/Economy",4,"Print Money",1,2,"Inflation what could possibly go wrong",
                     Resources.Load<Sprite>("PrintMoney"),"Uncommon"),
                 new Card(7,"Attack/Economy",3,"That One Friend",2,1,"There is always that one friend.",
                 Resources.Load<Sprite>("FistFistDerp"),"Uncommon"),

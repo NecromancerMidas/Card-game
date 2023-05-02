@@ -38,8 +38,6 @@ namespace Assets.Scripts
             IsTurn = false;
             MarketShop.FillMarket();
             Opponent.SetTurn();
-            
-            
         }
 
         
